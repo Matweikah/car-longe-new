@@ -5,17 +5,8 @@ export default function robots(): MetadataRoute.Robots {
     rules: [
       {
         userAgent: '*',
-        allow: '/',
-        disallow: [
-          '/avtomobili-v-nalichii?*',
-          '/inventory.html',
-          '/inventory.html?*',
-          '/index.html',
-          '/index.html?*',
-          '/avtomobili-v-nalichii/*?*'
-        ]
-      }
+        disallow: '/',
+      },
     ],
-    sitemap: 'https://car-lounge.ru/sitemap.xml'
   };
 }

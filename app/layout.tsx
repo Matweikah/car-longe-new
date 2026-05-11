@@ -10,6 +10,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://car-lounge.ru'),
   title: 'Car Lounge — автомобили в наличии и под заказ',
   description: 'Премиальные автомобили в наличии, а также подбор и поставка авто из Кореи, Китая, США и Европы.',
   openGraph: {
@@ -19,7 +20,19 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: '/images/logo.svg'
-  }
+  },
+  robots: {
+    index: false,
+    follow: false,
+    googleBot: {
+      index: false,
+      follow: false,
+      noimageindex: true,
+      'max-snippet': -1,
+      'max-image-preview': 'none',
+      'max-video-preview': -1
+    }
+  },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

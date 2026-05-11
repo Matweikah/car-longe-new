@@ -33,6 +33,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
       title: `${car.title} — автомобиль в наличии | Car Lounge`,
       description: `${car.title} в наличии в Car Lounge. Цена ${car.price}, фото, характеристики, комплектация и сопровождение сделки.`,
       alternates: { canonical: `/avtomobili-v-nalichii/${car.id}` },
+      robots: { index: false, follow: false, googleBot: { index: false, follow: false, noimageindex: true } },
       openGraph: {
         title: `${car.title} — Car Lounge`,
         description: `${car.title}: ${car.engine ?? 'характеристики уточняются'}, ${car.powerHp ? `${car.powerHp} л.с.` : 'мощность уточняется'}, ${car.fuel ?? 'тип топлива уточняется'}.`,
@@ -47,6 +48,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
       title: `${brand} в наличии — Car Lounge`,
       description: `${brand} в наличии в Car Lounge: актуальные автомобили, цены, фото, характеристики, комплектации и сопровождение покупки.`,
       alternates: { canonical: `/avtomobili-v-nalichii/${params.slug}` },
+      robots: { index: false, follow: false, googleBot: { index: false, follow: false, noimageindex: true } },
       openGraph: {
         title: `${brand} в наличии — Car Lounge`,
         description: `Каталог ${brand} в наличии: премиальные автомобили с актуальными ценами, фото и характеристиками.`,
@@ -55,7 +57,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
     };
   }
 
-  return { title: 'Автомобиль не найден — Car Lounge' };
+  return { title: 'Автомобиль не найден — Car Lounge', robots: { index: false, follow: false } };
 }
 
 function CarJsonLd({ car }: { car: (typeof stockCars)[number] }) {
