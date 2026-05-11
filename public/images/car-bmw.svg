@@ -1,0 +1,19 @@
+<svg width="900" height="675" viewBox="0 0 900 675" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="BMW black SUV">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#FAF8F4"/><stop offset="1" stop-color="#DCD6CE"/></linearGradient>
+    <linearGradient id="body" x1="0" x2="1"><stop stop-color="#101216"/><stop offset="0.48" stop-color="#373D44"/><stop offset="1" stop-color="#060709"/></linearGradient>
+  </defs>
+  <rect width="900" height="675" fill="url(#bg)"/>
+  <g opacity="0.32" fill="#B9B3AB"><rect x="62" y="94" width="130" height="238"/><rect x="226" y="56" width="116" height="276"/><rect x="383" y="110" width="164" height="222"/><rect x="590" y="72" width="132" height="260"/><rect x="760" y="126" width="86" height="206"/></g>
+  <rect x="0" y="420" width="900" height="255" fill="#E9E5DE"/>
+  <ellipse cx="452" cy="516" rx="350" ry="33" fill="#BBB5AB" opacity="0.42"/>
+  <g transform="translate(96 270)">
+    <path d="M48 140 C88 78 164 39 286 32 H496 C608 34 674 72 724 136 L748 190 H18 Z" fill="url(#body)"/>
+    <path d="M174 60 H486 C560 62 614 87 657 128 H104 C124 94 146 70 174 60 Z" fill="#08090B"/>
+    <path d="M604 144 H714" stroke="#0B0C0F" stroke-width="38" stroke-linecap="round" opacity="0.9"/>
+    <circle cx="188" cy="197" r="62" fill="#101114"/><circle cx="188" cy="197" r="31" fill="#A1A5A9"/>
+    <circle cx="585" cy="197" r="62" fill="#101114"/><circle cx="585" cy="197" r="31" fill="#A1A5A9"/>
+    <path d="M50 149 H150" stroke="#F5EFE6" stroke-width="8" stroke-linecap="round" opacity="0.8"/>
+    <path d="M638 151 H724" stroke="#D9A45F" stroke-width="8" stroke-linecap="round" opacity="0.78"/>
+  </g>
+</svg>

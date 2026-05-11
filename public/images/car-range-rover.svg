@@ -1,0 +1,21 @@
+<svg width="900" height="675" viewBox="0 0 900 675" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Range Rover black SUV">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#F8F6F1"/><stop offset="1" stop-color="#D9D4CC"/></linearGradient>
+    <linearGradient id="body" x1="0" x2="1"><stop stop-color="#121417"/><stop offset="0.45" stop-color="#41464B"/><stop offset="1" stop-color="#090A0C"/></linearGradient>
+  </defs>
+  <rect width="900" height="675" fill="url(#bg)"/>
+  <g opacity="0.35" fill="#B8B2A9">
+    <rect x="58" y="75" width="135" height="260"/><rect x="225" y="44" width="120" height="292"/><rect x="378" y="95" width="175" height="240"/><rect x="600" y="54" width="110" height="282"/><rect x="740" y="114" width="90" height="222"/>
+  </g>
+  <rect x="0" y="420" width="900" height="255" fill="#E9E5DE"/>
+  <ellipse cx="450" cy="515" rx="355" ry="34" fill="#BEB8AE" opacity="0.42"/>
+  <g transform="translate(98 260)">
+    <path d="M55 142 C95 78 172 42 292 34 H510 C620 38 676 72 718 132 L744 190 H20 Z" fill="url(#body)"/>
+    <path d="M180 63 H502 C574 66 624 88 664 127 H112 C130 94 152 72 180 63 Z" fill="#090A0C"/>
+    <path d="M116 139 H700" stroke="#6F747A" stroke-width="10" stroke-linecap="round" opacity="0.48"/>
+    <circle cx="190" cy="197" r="64" fill="#101114"/><circle cx="190" cy="197" r="32" fill="#8A8F94"/>
+    <circle cx="590" cy="197" r="64" fill="#101114"/><circle cx="590" cy="197" r="32" fill="#8A8F94"/>
+    <path d="M52 151 H166" stroke="#F5EFE6" stroke-width="9" stroke-linecap="round" opacity="0.8"/>
+    <path d="M638 151 H722" stroke="#D9A45F" stroke-width="9" stroke-linecap="round" opacity="0.78"/>
+  </g>
+</svg>
