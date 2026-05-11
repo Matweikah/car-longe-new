@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Car Lounge — автомобили в наличии и под заказ</title>
+  <meta name="description" content="Премиальные автомобили в наличии, а также подбор и поставка авто из Кореи, Китая, США и Европы." />
+  <meta property="og:title" content="Car Lounge — автомобили в наличии и под заказ" />
+  <meta property="og:description" content="Компактный каталог премиальных автомобилей с быстрым поиском и SEO-friendly структурой." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#202327" />
+  <link rel="preload" as="image" href="./public/images/logo.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://car-lounge.ru" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#top" aria-label="Car Lounge — на главную">
+        <img class="logo-image" src="./public/images/logo.svg" alt="Car Lounge" width="148" height="60" />
+      </a>
+
+      <nav class="desktop-nav" aria-label="Основная навигация">
+        <a href="./inventory.html">Авто в наличии</a>
+        <a href="#brands-korea">Авто из Кореи</a>
+        <a href="#brands-china">Авто из Китая</a>
+        <a href="#about">О нас</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <a class="header-phone" href="tel:+78122407788" aria-label="Позвонить в Car Lounge">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.95.35 1.89.66 2.79a2 2 0 0 1-.45 2.11L8.05 9.88a16 16 0 0 0 6.07 6.07l1.26-1.27a2 2 0 0 1 2.11-.45c.9.31 1.84.53 2.79.66A2 2 0 0 1 22 16.92Z"/></svg>
+        8 (812) 240-77-88
+      </a>
+
+      <details class="mobile-menu">
+        <summary aria-label="Открыть меню">
+          <span></span><span></span><span></span>
+        </summary>
+        <nav aria-label="Мобильная навигация">
+          <a href="./inventory.html">Авто в наличии</a>
+          <a href="#brands-korea">Авто из Кореи</a>
+          <a href="#brands-china">Авто из Китая</a>
+          <a href="#contacts">Контакты</a>
+        </nav>
+      </details>
+    </div>
+  </header>
+
+  <main>
+    <section id="top" class="hero" aria-labelledby="hero-title">
+      <img class="hero-bg" src="./public/images/hero-lounge.svg" alt="Премиальный автомобиль на фоне города" fetchpriority="high" />
+      <div class="hero-shade" aria-hidden="true"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 1.55 5.02L19 5.5l-1.52 5.45L22 14l-5.35 1.02L17.5 21 12 18.05 6.5 21l.85-5.98L2 14l4.52-3.05L5 5.5l5.45 1.52L12 2Z"/></svg>
+            Новые поступления каждую неделю
+          </p>
+          <h1 id="hero-title">Автомобили в наличии и под заказ</h1>
+          <p class="hero-lead">Подбор премиальных авто из Южной Кореи, Китая, США и Европы. Компактный поиск, понятные условия и быстрый переход к заявке.</p>
+          <div class="hero-badges" aria-label="Преимущества">
+            <span>32 авто в наличии</span>
+            <span>204 318 авто под заказ</span>
+            <span>Поставка от 14 дней</span>
+          </div>
+        </div>
+
+        <form class="search-card" aria-label="Поиск автомобиля">
+          <div class="tabs" role="tablist" aria-label="Тип поиска">
+            <button class="active" type="button">Корея</button>
+            <button type="button">Китай</button>
+            <button type="button">В наличии</button>
+          </div>
+
+          <div class="field-grid">
+            <label class="select-field">
+              <span>Марка</span>
+              <select aria-label="Марка автомобиля"><option>Любая</option><option>Land Rover</option><option>Lexus</option><option>Mercedes-Benz</option><option>BMW</option></select>
+            </label>
+            <label class="select-field">
+              <span>Модель</span>
+              <select aria-label="Модель автомобиля"><option>Любая</option><option>Range Rover</option><option>LX 500D</option><option>V300</option><option>X5</option></select>
+            </label>
+            <label class="select-field">
+              <span>Год от</span>
+              <select aria-label="Год выпуска от"><option>2020</option><option>2021</option><option>2022</option><option>2023</option><option>2024</option></select>
+            </label>
+            <label class="select-field">
+              <span>Цена до</span>
+              <select aria-label="Цена до"><option>25 млн ₽</option><option>20 млн ₽</option><option>15 млн ₽</option><option>10 млн ₽</option></select>
+            </label>
+          </div>
+
+          <button class="primary-button" type="submit">
+            Найти авто
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <section id="inventory" class="inventory section-pad" aria-labelledby="inventory-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">В наличии</p>
+            <h2 id="inventory-title">Автомобили в наличии <span>22 авто</span></h2>
+          </div>
+          <div class="section-actions"><a class="text-link" href="./inventory.html">Смотреть все авто <span aria-hidden="true">→</span></a><div class="carousel-arrows" aria-label="Прокрутка автомобилей"><button type="button" data-carousel-prev="cars" aria-label="Прокрутить автомобили назад">‹</button><button type="button" data-carousel-next="cars" aria-label="Прокрутить автомобили вперед">›</button></div></div>
+        </div>
+
+        <div class="car-grid car-carousel" data-carousel="cars" aria-label="Карусель автомобилей в наличии">          <article class="car-card" data-carousel-card>
+            <div class="car-image">
+              <img src="https://car-lounge.ru/classes/thumb.php?src=/uploads/car/f3/f300ad71c46b75bd.jpeg&w=620&h=440&q=85" alt="Land Rover Range Rover P360 MHEV Long черного цвета" width="620" height="440" loading="lazy" decoding="async" />
+              <span>до 1000 км</span>
+            </div>
+            <div class="car-content">
+              <h3>Land Rover Range Rover P360 MHEV Long</h3>
+              <p>2026 г.в., 0 км, 360 л.с.</p>
+              <div class="car-bottom"><strong>24 709 700 ₽</strong><a href="#contacts" aria-label="Подробнее о Land Rover Range Rover P360 MHEV Long">→</a></div>
+            </div>
+          </article>
+          <article class="car-card" data-carousel-card>
+            <div class="car-image">
+              <img src="https://car-lounge.ru/classes/thumb.php?src=/uploads/car/7f/7f6459138f85ea00.jpeg&w=620&h=440&q=85" alt="Lexus LX 500D черного цвета" width="620" height="440" loading="lazy" decoding="async" />
+              <span>в наличии</span>
+            </div>
+            <div class="car-content">
+              <h3>Lexus LX 500D</h3>
+              <p>2025 г.в., 0 км, 299 л.с.</p>
+              <div class="car-bottom"><strong>20 177 700 ₽</strong><a href="#contacts" aria-label="Подробнее о Lexus LX 500D">→</a></div>
+            </div>
+          </article>
+          <article class="car-card" data-carousel-card>
+            <div class="car-image">
+              <img src="https://car-lounge.ru/classes/thumb.php?src=/uploads/car/68/68604e37af4b0c76.jpeg&w=620&h=440&q=85" alt="Mercedes-Benz V300 Extra Long черного цвета" width="620" height="440" loading="lazy" decoding="async" />
+              <span>до 1000 км</span>
+            </div>
+            <div class="car-content">
+              <h3>Mercedes-Benz V300 Extra Long</h3>
+              <p>2024 г.в., 0 км, 237 л.с.</p>
+              <div class="car-bottom"><strong>17 499 700 ₽</strong><a href="#contacts" aria-label="Подробнее о Mercedes-Benz V300 Extra Long">→</a></div>
+            </div>
+          </article>
+          <article class="car-card" data-carousel-card>
+            <div class="car-image">
+              <img src="https://car-lounge.ru/classes/thumb.php?src=/uploads/car/97/97c06bae1a1a1a98.jpeg&w=620&h=440&q=85" alt="BMW X5 xDrive40i M Sport черного цвета" width="620" height="440" loading="lazy" decoding="async" />
+              <span>новое поступление</span>
+            </div>
+            <div class="car-content">
+              <h3>BMW X5 xDrive40i M Sport</h3>
+              <p>2026 г.в., 0 км, 381 л.с.</p>
+              <div class="car-bottom"><strong>15 954 700 ₽</strong><a href="#contacts" aria-label="Подробнее о BMW X5 xDrive40i M Sport">→</a></div>
+            </div>
+          </article>
+          <article class="car-card" data-clone="1-1" data-carousel-card>
+            <div class="car-image">
+              <img src="https://car-lounge.ru/classes/thumb.php?src=/uploads/car/f3/f300ad71c46b75bd.jpeg&w=620&h=440&q=85" alt="Land Rover Range Rover P360 MHEV Long черного цвета" width="620" height="440" loading="lazy" decoding="async" />
+              <span>до 1000 км</span>
+            </div>
+            <div class="car-content">
+              <h3>Land Rover Range Rover P360 MHEV Long</h3>
+              <p>2026 г.в., 0 км, 360 л.с.</p>
+              <div class="car-bottom"><strong>24 709 700 ₽</strong><a href="#contacts" aria-label="Подробнее о Land Rover Range Rover P360 MHEV Long">→</a></div>
+            </div>
+          </article>
+          <article class="car-card" data-clone="1-2" data-carousel-card>
+            <div class="car-image">
+              <img src="https://car-lounge.ru/classes/thumb.php?src=/uploads/car/7f/7f6459138f85ea00.jpeg&w=620&h=440&q=85" alt="Lexus LX 500D черного цвета" width="620" height="440" loading="lazy" decoding="async" />
+              <span>в наличии</span>
+            </div>
+            <div class="car-content">
+              <h3>Lexus LX 500D</h3>
+              <p>2025 г.в., 0 км, 299 л.с.</p>
+              <div class="car-bottom"><strong>20 177 700 ₽</strong><a href="#contacts" aria-label="Подробнее о Lexus LX 500D">→</a></div>
+            </div>
+          </article>
+          <article class="car-card" data-clone="1-3" data-carousel-card>
+            <div class="car-image">
+              <img src="https://car-lounge.ru/classes/thumb.php?src=/uploads/car/68/68604e37af4b0c76.jpeg&w=620&h=440&q=85" alt="Mercedes-Benz V300 Extra Long черного цвета" width="620" height="440" loading="lazy" decoding="async" />
+              <span>до 1000 км</span>
+            </div>
+            <div class="car-content">
+              <h3>Mercedes-Benz V300 Extra Long</h3>
+              <p>2024 г.в., 0 км, 237 л.с.</p>
+              <div class="car-bottom"><strong>17 499 700 ₽</strong><a href="#contacts" aria-label="Подробнее о Mercedes-Benz V300 Extra Long">→</a></div>
+            </div>
+          </article>
+          <article class="car-card" data-clone="1-4" data-carousel-card>
+            <div class="car-image">
+              <img src="https://car-lounge.ru/classes/thumb.php?src=/uploads/car/97/97c06bae1a1a1a98.jpeg&w=620&h=440&q=85" alt="BMW X5 xDrive40i M Sport черного цвета" width="620" height="440" loading="lazy" decoding="async" />
+              <span>новое поступление</span>
+            </div>
+            <div class="car-content">
+              <h3>BMW X5 xDrive40i M Sport</h3>
+              <p>2026 г.в., 0 км, 381 л.с.</p>
+              <div class="car-bottom"><strong>15 954 700 ₽</strong><a href="#contacts" aria-label="Подробнее о BMW X5 xDrive40i M Sport">→</a></div>
+            </div>
+          </article>
+          <article class="car-card" data-clone="2-1" data-carousel-card>
+            <div class="car-image">
+              <img src="https://car-lounge.ru/classes/thumb.php?src=/uploads/car/f3/f300ad71c46b75bd.jpeg&w=620&h=440&q=85" alt="Land Rover Range Rover P360 MHEV Long черного цвета" width="620" height="440" loading="lazy" decoding="async" />
+              <span>до 1000 км</span>
+            </div>
+            <div class="car-content">
+              <h3>Land Rover Range Rover P360 MHEV Long</h3>
+              <p>2026 г.в., 0 км, 360 л.с.</p>
+              <div class="car-bottom"><strong>24 709 700 ₽</strong><a href="#contacts" aria-label="Подробнее о Land Rover Range Rover P360 MHEV Long">→</a></div>
+            </div>
+          </article>
+          <article class="car-card" data-clone="2-2" data-carousel-card>
+            <div class="car-image">
+              <img src="https://car-lounge.ru/classes/thumb.php?src=/uploads/car/7f/7f6459138f85ea00.jpeg&w=620&h=440&q=85" alt="Lexus LX 500D черного цвета" width="620" height="440" loading="lazy" decoding="async" />
+              <span>в наличии</span>
+            </div>
+            <div class="car-content">
+              <h3>Lexus LX 500D</h3>
+              <p>2025 г.в., 0 км, 299 л.с.</p>
+              <div class="car-bottom"><strong>20 177 700 ₽</strong><a href="#contacts" aria-label="Подробнее о Lexus LX 500D">→</a></div>
+            </div>
+          </article>
+          <article class="car-card" data-clone="2-3" data-carousel-card>
+            <div class="car-image">
+              <img src="https://car-lounge.ru/classes/thumb.php?src=/uploads/car/68/68604e37af4b0c76.jpeg&w=620&h=440&q=85" alt="Mercedes-Benz V300 Extra Long черного цвета" width="620" height="440" loading="lazy" decoding="async" />
+              <span>до 1000 км</span>
+            </div>
+            <div class="car-content">
+              <h3>Mercedes-Benz V300 Extra Long</h3>
+              <p>2024 г.в., 0 км, 237 л.с.</p>
+              <div class="car-bottom"><strong>17 499 700 ₽</strong><a href="#contacts" aria-label="Подробнее о Mercedes-Benz V300 Extra Long">→</a></div>
+            </div>
+          </article>
+          <article class="car-card" data-clone="2-4" data-carousel-card>
+            <div class="car-image">
+              <img src="https://car-lounge.ru/classes/thumb.php?src=/uploads/car/97/97c06bae1a1a1a98.jpeg&w=620&h=440&q=85" alt="BMW X5 xDrive40i M Sport черного цвета" width="620" height="440" loading="lazy" decoding="async" />
+              <span>новое поступление</span>
+            </div>
+            <div class="car-content">
+              <h3>BMW X5 xDrive40i M Sport</h3>
+              <p>2026 г.в., 0 км, 381 л.с.</p>
+              <div class="car-bottom"><strong>15 954 700 ₽</strong><a href="#contacts" aria-label="Подробнее о BMW X5 xDrive40i M Sport">→</a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="brands-korea" class="brands section-pad" aria-labelledby="brands-korea-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">Под заказ</p>
+            <h2 id="brands-korea-title">Из Южной Кореи <span>204 318 авто</span></h2>
+          </div>
+          <a class="outline-button" href="#about">Как проходит покупка</a>
+        </div>
+
+        <div class="brand-grid" aria-label="Марки автомобилей — из южной кореи">
+          <a href="#inventory" aria-label="Смотреть автомобили Aston Martin"><span class="brand-icon"><img src="./public/images/brands/aston-martin.svg" alt="Логотип Aston Martin" width="32" height="32" loading="lazy" decoding="async" /></span><span class="brand-name">Aston Martin</span></a>
+          <a href="#inventory" aria-label="Смотреть автомобили Audi"><span class="brand-icon"><img src="./public/images/brands/audi.svg" alt="Логотип Audi" width="32" height="32" loading="lazy" decoding="async" /></span><span class="brand-name">Audi</span></a>
+          <a href="#inventory" aria-label="Смотреть автомобили Bentley"><span class="brand-icon"><img src="./public/images/brands/bentley.svg" alt="Логотип Bentley" width="32" height="32" loading="lazy" decoding="async" /></span><span class="brand-name">Bentley</span></a>
+          <a href="#inventory" aria-label="Смотреть автомобили BMW"><span class="brand-icon"><img src="./public/images/brands/bmw.svg" alt="Логотип BMW" width="32" height="32" loading="lazy" decoding="async" /></span><span class="brand-name">BMW</span></a>
+          <a href="#inventory" aria-label="Смотреть автомобили Cadillac"><span class="brand-icon"><img src="./public/images/brands/cadillac.svg" alt="Логотип Cadillac" width="32" height="32" loading="lazy" decoding="async" /></span><span class="brand-name">Cadillac</span></a>
+          <a href="#inventory" aria-label="Смотреть автомобили Chevrolet"><span class="brand-icon"><img src="./public/images/brands/chevrolet.svg" alt="Логотип Chevrolet" width="32" height="32" loading="lazy" decoding="async" /></span><span class="brand-name">Chevrolet</span></a>
+          <a href="#inventory" aria-label="Смотреть автомобили Genesis"><span class="brand-icon"><img src="./public/images/brands/genesis.svg" alt="Логотип Genesis" width="32" height="32" loading="lazy" decoding="async" /></span><span class="brand-name">Genesis</span></a>
+          <a href="#inventory" aria-label="Смотреть автомобили Honda"><span class="brand-icon"><img src="./public/images/brands/honda.svg" alt="Логотип Honda" width="32" height="32" loading="lazy" decoding="async" /></span><span class="brand-name">Honda</span></a>
+          <a href="#inventory" aria-label="Смотреть автомобили Hyundai"><span class="brand-icon"><img src="./public/images/brands/hyundai.svg" alt="Логотип Hyundai" width="32" height="32" loading="lazy" decoding="async" /></span><span class="brand-name">Hyundai</span></a>
+          <a href="#inventory" aria-label="Смотреть автомобили Infiniti"><span class="brand-icon"><img src="./public/images/brands/infiniti.svg" alt="Логотип Infiniti" width="32" height="32" loading="lazy" decoding="async" /></span><span class="brand-name">Infiniti</span></a>
+          <a href="#inventory" aria-label="Смотреть автомобили Jaguar"><span class="brand-icon"><img src="./public/images/brands/jaguar.svg" alt="Логотип Jaguar" width="32" height="32" loading="lazy" decoding="async" /></span><span class="brand-name">Jaguar</span></a>
+          <a href="#inventory" aria-label="Смотреть автомобили Jeep"><span class="brand-icon"><img src="./public/images/brands/jeep.svg" alt="Логотип Jeep" width="32" height="32" loading="lazy" decoding="async" /></span><span class="brand-name">Jeep</span></a>
+          <a href="#inventory" aria-label="Смотреть автомобили Kia"><span class="brand-icon"><img src="./public/images/brands/kia.svg" alt="Логотип Kia" width="32" height="32" loading="lazy" decoding="async" /></span><span class="brand-name">Kia</span></a>
+          <a href="#inventory" aria-label="Смотреть автомобили Land Rover"><span class="brand-icon"><img src="./public/images/brands/land-rover.svg" alt="Логотип Land Rover" width="32" height="32" loading="lazy" decoding="async" /></span><span class="brand-name">Land Rover</span></a>
+          <a href="#inventory" aria-label="Смотреть автомобили Lexus"><span class="brand-icon"><img src="./public/images/brands/lexus.svg" alt="Логотип Lexus" width="32" height="32" loading="lazy" decoding="async" /></span><span class="brand-name">Lexus</span></a>
+          <a href="#inventory" aria-label="Смотреть автомобили Maserati"><span class="brand-icon"><img src="./public/images/brands/maserati.svg" alt="Логотип Maserati" width="32" height="32" loading="lazy" decoding="async" /></span><span class="brand-name">Maserati</span></a>
+          <a href="#inventory" aria-label="Смотреть автомобили Mercedes-Benz"><span class="brand-icon"><img src="./public/images/brands/mercedes-benz.svg" alt="Логотип Mercedes-Benz" width="32" height="32" loading="lazy" decoding="async" /></span><span class="brand-name">Mercedes-Benz</span></a>
+          <a href="#inventory" aria-label="Смотреть автомобили Mini"><span class="brand-icon"><img src="./public/images/brands/mini.svg" alt="Логотип Mini" width="32" height="32" loading="lazy" decoding="async" /></span><span class="brand-name">Mini</span></a>
+          <a href="#inventory" aria-label="Смотреть автомобили Nissan"><span class="brand-icon"><img src="./public/images/brands/nissan.svg" alt="Логотип Nissan" width="32" height="32" loading="lazy" decoding="async" /></span><span class="brand-name">Nissan</span></a>
+          <a href="#inventory" aria-label="Смотреть автомобили Porsche"><span class="brand-icon"><img src="./public/images/brands/porsche.svg" alt="Логотип Porsche" width="32" height="32" loading="lazy" decoding="async" /></span><span class="brand-name">Porsche</span></a>
+          <a href="#inventory" aria-label="Смотреть автомобили Rolls-Royce"><span class="brand-icon"><img src="./public/images/brands/rolls-royce.svg" alt="Логотип Rolls-Royce" width="32" height="32" loading="lazy" decoding="async" /></span><span class="brand-name">Rolls-Royce</span></a>
+          <a href="#inventory" aria-label="Смотреть автомобили Tesla"><span class="brand-icon"><img src="./public/images/brands/tesla.svg" alt="Логотип Tesla" width="32" height="32" loading="lazy" decoding="async" /></span><span class="brand-name">Tesla</span></a>
+          <a href="#inventory" aria-label="Смотреть автомобили Toyota"><span class="brand-icon"><img src="./public/images/brands/toyota.svg" alt="Логотип Toyota" width="32" height="32" loading="lazy" decoding="async" /></span><span class="brand-name">Toyota</span></a>
+          <a href="#inventory" aria-label="Смотреть автомобили Volvo"><span class="brand-icon"><img src="./public/images/brands/volvo.svg" alt="Логотип Volvo" width="32" height="32" loading="lazy" decoding="async" /></span><span class="brand-name">Volvo</span></a>
+        </div>
+
+        <div class="center-row">
+          <a class="dark-button" href="#top">Расширенный поиск по Корее</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="brands-china" class="brands section-pad brands-follow" aria-labelledby="brands-china-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">Китайский рынок</p>
+            <h2 id="brands-china-title">Из Китая <span>под заказ</span></h2>
+          </div>
+          <a class="outline-button" href="#about">Как проходит покупка</a>
+        </div>
+
+        <div class="brand-grid" aria-label="Марки автомобилей — из китая">
+          <a href="#inventory" aria-label="Смотреть автомобили Avatr"><span class="brand-icon"><img src="./public/images/brands/avatr.svg" alt="Логотип Avatr" width="32" height="32" loading="lazy" decoding="async" /></span><span class="brand-name">Avatr</span></a>
+          <a href="#inventory" aria-label="Смотреть автомобили Aito"><span class="brand-icon"><img src="./public/images/brands/aito.svg" alt="Логотип Aito" width="32" height="32" loading="lazy" decoding="async" /></span><span class="brand-name">Aito</span></a>
+          <a href="#inventory" aria-label="Смотреть автомобили BAIC"><span class="brand-icon"><img src="./public/images/brands/baic.svg" alt="Логотип BAIC" width="32" height="32" loading="lazy" decoding="async" /></span><span class="brand-name">BAIC</span></a>
+          <a href="#inventory" aria-label="Смотреть автомобили BYD"><span class="brand-icon"><img src="./public/images/brands/byd.svg" alt="Логотип BYD" width="32" height="32" loading="lazy" decoding="async" /></span><span class="brand-name">BYD</span></a>
+          <a href="#inventory" aria-label="Смотреть автомобили Changan"><span class="brand-icon"><img src="./public/images/brands/changan.svg" alt="Логотип Changan" width="32" height="32" loading="lazy" decoding="async" /></span><span class="brand-name">Changan</span></a>
+          <a href="#inventory" aria-label="Смотреть автомобили Chery"><span class="brand-icon"><img src="./public/images/brands/chery.svg" alt="Логотип Chery" width="32" height="32" loading="lazy" decoding="async" /></span><span class="brand-name">Chery</span></a>
+          <a href="#inventory" aria-label="Смотреть автомобили Denza"><span class="brand-icon"><img src="./public/images/brands/denza.svg" alt="Логотип Denza" width="32" height="32" loading="lazy" decoding="async" /></span><span class="brand-name">Denza</span></a>
+          <a href="#inventory" aria-label="Смотреть автомобили Dongfeng"><span class="brand-icon"><img src="./public/images/brands/dongfeng.svg" alt="Логотип Dongfeng" width="32" height="32" loading="lazy" decoding="async" /></span><span class="brand-name">Dongfeng</span></a>
+          <a href="#inventory" aria-label="Смотреть автомобили Exeed"><span class="brand-icon"><img src="./public/images/brands/exeed.svg" alt="Логотип Exeed" width="32" height="32" loading="lazy" decoding="async" /></span><span class="brand-name">Exeed</span></a>
+          <a href="#inventory" aria-label="Смотреть автомобили GAC"><span class="brand-icon"><img src="./public/images/brands/gac.svg" alt="Логотип GAC" width="32" height="32" loading="lazy" decoding="async" /></span><span class="brand-name">GAC</span></a>
+          <a href="#inventory" aria-label="Смотреть автомобили Geely"><span class="brand-icon"><img src="./public/images/brands/geely.svg" alt="Логотип Geely" width="32" height="32" loading="lazy" decoding="async" /></span><span class="brand-name">Geely</span></a>
+          <a href="#inventory" aria-label="Смотреть автомобили Great Wall"><span class="brand-icon"><img src="./public/images/brands/great-wall.svg" alt="Логотип Great Wall" width="32" height="32" loading="lazy" decoding="async" /></span><span class="brand-name">Great Wall</span></a>
+          <a href="#inventory" aria-label="Смотреть автомобили Haval"><span class="brand-icon"><img src="./public/images/brands/haval.svg" alt="Логотип Haval" width="32" height="32" loading="lazy" decoding="async" /></span><span class="brand-name">Haval</span></a>
+          <a href="#inventory" aria-label="Смотреть автомобили Hongqi"><span class="brand-icon"><img src="./public/images/brands/hongqi.svg" alt="Логотип Hongqi" width="32" height="32" loading="lazy" decoding="async" /></span><span class="brand-name">Hongqi</span></a>
+          <a href="#inventory" aria-label="Смотреть автомобили JAC"><span class="brand-icon"><img src="./public/images/brands/jac.svg" alt="Логотип JAC" width="32" height="32" loading="lazy" decoding="async" /></span><span class="brand-name">JAC</span></a>
+          <a href="#inventory" aria-label="Смотреть автомобили Jetour"><span class="brand-icon"><img src="./public/images/brands/jetour.svg" alt="Логотип Jetour" width="32" height="32" loading="lazy" decoding="async" /></span><span class="brand-name">Jetour</span></a>
+          <a href="#inventory" aria-label="Смотреть автомобили Li Auto"><span class="brand-icon"><img src="./public/images/brands/li-auto.svg" alt="Логотип Li Auto" width="32" height="32" loading="lazy" decoding="async" /></span><span class="brand-name">Li Auto</span></a>
+          <a href="#inventory" aria-label="Смотреть автомобили Lynk &amp; Co"><span class="brand-icon"><img src="./public/images/brands/lynk-co.svg" alt="Логотип Lynk &amp; Co" width="32" height="32" loading="lazy" decoding="async" /></span><span class="brand-name">Lynk &amp; Co</span></a>
+          <a href="#inventory" aria-label="Смотреть автомобили MG"><span class="brand-icon"><img src="./public/images/brands/mg.svg" alt="Логотип MG" width="32" height="32" loading="lazy" decoding="async" /></span><span class="brand-name">MG</span></a>
+          <a href="#inventory" aria-label="Смотреть автомобили Nio"><span class="brand-icon"><img src="./public/images/brands/nio.svg" alt="Логотип Nio" width="32" height="32" loading="lazy" decoding="async" /></span><span class="brand-name">Nio</span></a>
+          <a href="#inventory" aria-label="Смотреть автомобили Omoda"><span class="brand-icon"><img src="./public/images/brands/omoda.svg" alt="Логотип Omoda" width="32" height="32" loading="lazy" decoding="async" /></span><span class="brand-name">Omoda</span></a>
+          <a href="#inventory" aria-label="Смотреть автомобили Tank"><span class="brand-icon"><img src="./public/images/brands/tank.svg" alt="Логотип Tank" width="32" height="32" loading="lazy" decoding="async" /></span><span class="brand-name">Tank</span></a>
+          <a href="#inventory" aria-label="Смотреть автомобили Voyah"><span class="brand-icon"><img src="./public/images/brands/voyah.svg" alt="Логотип Voyah" width="32" height="32" loading="lazy" decoding="async" /></span><span class="brand-name">Voyah</span></a>
+          <a href="#inventory" aria-label="Смотреть автомобили Zeekr"><span class="brand-icon"><img src="./public/images/brands/zeekr.svg" alt="Логотип Zeekr" width="32" height="32" loading="lazy" decoding="async" /></span><span class="brand-name">Zeekr</span></a>
+        </div>
+
+        <div class="center-row">
+          <a class="dark-button" href="#top">Расширенный поиск по Китаю</a>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="youtube" class="youtube section-pad" aria-labelledby="youtube-title">
+      <div class="container">
+        <div class="section-head youtube-head">
+          <div>
+            <p class="section-kicker">Видео</p>
+            <h2 id="youtube-title">Мы в YouTube <span>@carlounge_life</span></h2>
+          </div>
+          <div class="carousel-arrows youtube-arrows" aria-label="Прокрутка YouTube Shorts">
+            <button type="button" data-carousel-prev="youtube" aria-label="Прокрутить Shorts назад">‹</button>
+            <button type="button" data-carousel-next="youtube" aria-label="Прокрутить Shorts вперед">›</button>
+          </div>
+        </div>
+
+        <div class="youtube-carousel" data-carousel="youtube" aria-label="Карусель YouTube Shorts">
+          <button class="short-card" type="button" data-carousel-card data-video-id="VdHAnDCS4mg" data-title="Семейный электромобиль из Европы" aria-label="Открыть shorts: Семейный электромобиль из Европы">
+            <img src="https://i.ytimg.com/vi/VdHAnDCS4mg/oar2.jpg?sqp=-oaymwErCJUDEOAESFqQAgHyq4qpAxoIARUAAIhCyAEB2AEB4gEKCBgQAhgGOAFAAQ==&amp;rs=AOn4CLDG-WmuUOjiAWFQXw9GgfbYYM6wFA&amp;usqp=CCk" alt="YouTube Shorts Car Lounge: семейный электромобиль из Европы" width="360" height="640" loading="lazy" decoding="async" />
+            <span class="short-play" aria-hidden="true"></span>
+            <span class="short-caption"><span>Shorts</span>Семейный электромобиль из Европы</span>
+          </button>
+          <button class="short-card" type="button" data-carousel-card data-video-id="A5JA_lschCQ" data-title="Как вам европейский Mercedes-Benz EQA?" aria-label="Открыть shorts: Как вам европейский Mercedes-Benz EQA?">
+            <img src="https://i.ytimg.com/vi/A5JA_lschCQ/oar2.jpg?sqp=-oaymwErCJUDEOAESFqQAgHyq4qpAxoIARUAAIhCyAEB2AEB4gEKCBgQAhgGOAFAAQ==&amp;rs=AOn4CLDsOpVGEvw5iYbhtzFSttfdqGxQLg&amp;usqp=CCk" alt="YouTube Shorts Car Lounge: Mercedes-Benz EQA" width="360" height="640" loading="lazy" decoding="async" />
+            <span class="short-play" aria-hidden="true"></span>
+            <span class="short-caption"><span>Shorts</span>Как вам европейский Mercedes-Benz EQA?</span>
+          </button>
+          <button class="short-card" type="button" data-carousel-card data-video-id="vyGaL-7WGW0" data-title="Рассказываем о новинках в Австрии" aria-label="Открыть shorts: Рассказываем о новинках в Австрии">
+            <img src="https://i.ytimg.com/vi/vyGaL-7WGW0/oar2.jpg?sqp=-oaymwErCJUDEOAESFqQAgHyq4qpAxoIARUAAIhCyAEB2AEB4gEKCBgQAhgGOAFAAQ==&amp;rs=AOn4CLBhlGi26uOaIYBHWZqrIVXVOIUkuw&amp;usqp=CCk" alt="YouTube Shorts Car Lounge: новинки в Австрии" width="360" height="640" loading="lazy" decoding="async" />
+            <span class="short-play" aria-hidden="true"></span>
+            <span class="short-caption"><span>Shorts</span>Рассказываем о новинках в Австрии</span>
+          </button>
+          <button class="short-card" type="button" data-carousel-card data-video-id="kIrzJld6cfQ" data-title="Выдаем GLC Купе 300 — черная на черном" aria-label="Открыть shorts: Выдаем GLC Купе 300 — черная на черном">
+            <img src="https://i.ytimg.com/vi/kIrzJld6cfQ/oar2.jpg?sqp=-oaymwErCJUDEOAESFqQAgHyq4qpAxoIARUAAIhCyAEB2AEB4gEKCBgQAhgGOAFAAQ==&amp;rs=AOn4CLBmpV2kOhV2_vc_LoFA07FINSB7ug&amp;usqp=CCk" alt="YouTube Shorts Car Lounge: выдача GLC Купе 300" width="360" height="640" loading="lazy" decoding="async" />
+            <span class="short-play" aria-hidden="true"></span>
+            <span class="short-caption"><span>Shorts</span>Выдаем GLC Купе 300 — черная на черном</span>
+          </button>
+          <button class="short-card" type="button" data-carousel-card data-video-id="kIrzJld6cfQ" data-title="Клиент должен получить автомобиль" aria-label="Открыть shorts: Клиент должен получить автомобиль">
+            <img src="https://i.ytimg.com/vi/kIrzJld6cfQ/oar2.jpg?sqp=-oaymwErCJUDEOAESFqQAgHyq4qpAxoIARUAAIhCyAEB2AEB4gEKCBgQAhgGOAFAAQ==&amp;rs=AOn4CLBmpV2kOhV2_vc_LoFA07FINSB7ug&amp;usqp=CCk" alt="YouTube Shorts Car Lounge: клиент получает автомобиль" width="360" height="640" loading="lazy" decoding="async" />
+            <span class="short-play" aria-hidden="true"></span>
+            <span class="short-caption"><span>Shorts</span>Клиент должен получить автомобиль</span>
+          </button>
+          <button class="short-card" type="button" data-carousel-card data-video-id="yFL5eOOkWvk" data-title="Выдача Mercedes-Benz" aria-label="Открыть shorts: Выдача Mercedes-Benz">
+            <img src="https://i.ytimg.com/vi/yFL5eOOkWvk/oar2.jpg?sqp=-oaymwErCJUDEOAESFqQAgHyq4qpAxoIARUAAIhCyAEB2AEB4gEKCBgQAhgGOAFAAQ==&amp;rs=AOn4CLB5Ps0mjuZzOD-0R8HPmivMsFF-sg&amp;usqp=CCk" alt="YouTube Shorts Car Lounge: выдача Mercedes-Benz" width="360" height="640" loading="lazy" decoding="async" />
+            <span class="short-play" aria-hidden="true"></span>
+            <span class="short-caption"><span>Shorts</span>Выдача Mercedes-Benz</span>
+          </button>
+          <button class="short-card" type="button" data-carousel-card data-video-id="3pBPsO8H8JI" data-title="Рубрика «Выкупили»" aria-label="Открыть shorts: Рубрика «Выкупили»">
+            <img src="https://i.ytimg.com/vi/3pBPsO8H8JI/oar2.jpg?sqp=-oaymwErCJUDEOAESFqQAgHyq4qpAxoIARUAAIhCyAEB2AEB4gEKCBgQAhgGOAFAAQ==&amp;rs=AOn4CLB7IYfL_p_I8hHtUDLLHc_QR3rL8w&amp;usqp=CCk" alt="YouTube Shorts Car Lounge: рубрика Выкупили" width="360" height="640" loading="lazy" decoding="async" />
+            <span class="short-play" aria-hidden="true"></span>
+            <span class="short-caption"><span>Shorts</span>Рубрика «Выкупили»</span>
+          </button>
+          <button class="short-card" type="button" data-carousel-card data-video-id="dnJt_5ao1WQ" data-title="Сколько можно экономить на подборе" aria-label="Открыть shorts: Сколько можно экономить на подборе">
+            <img src="https://i.ytimg.com/vi/dnJt_5ao1WQ/oar2.jpg?sqp=-oaymwErCJUDEOAESFqQAgHyq4qpAxoIARUAAIhCyAEB2AEB4gEKCBgQAhgGOAFAAQ==&amp;rs=AOn4CLARgL10woYnOGMtwJ9-YmpWN9OEOQ&amp;usqp=CCk" alt="YouTube Shorts Car Lounge: советы по подбору автомобиля" width="360" height="640" loading="lazy" decoding="async" />
+            <span class="short-play" aria-hidden="true"></span>
+            <span class="short-caption"><span>Shorts</span>Сколько можно экономить на подборе</span>
+          </button>
+          <button class="short-card" type="button" data-carousel-card data-video-id="thB4lHgqRAA" data-title="Везем Mercedes-Benz" aria-label="Открыть shorts: Везем Mercedes-Benz">
+            <img src="https://i.ytimg.com/vi/thB4lHgqRAA/oar2.jpg?sqp=-oaymwErCIoDEM8ESFqQAgHyq4qpAxoIARUAAIhCyAEB2AEB4gEKCBgQAhgGOAFAAQ==&amp;rs=AOn4CLB1p84C_4Zmm76Uz4XrR6-Q3AD4WA&amp;usqp=CCk" alt="YouTube Shorts Car Lounge: везем Mercedes-Benz" width="360" height="640" loading="lazy" decoding="async" />
+            <span class="short-play" aria-hidden="true"></span>
+            <span class="short-caption"><span>Shorts</span>Везем Mercedes-Benz</span>
+          </button>
+          <button class="short-card" type="button" data-carousel-card data-video-id="thB4lHgqRAA" data-title="Сегодня выдаем BMW" aria-label="Открыть shorts: Сегодня выдаем BMW">
+            <img src="https://i.ytimg.com/vi/thB4lHgqRAA/oar2.jpg?sqp=-oaymwErCIoDEM8ESFqQAgHyq4qpAxoIARUAAIhCyAEB2AEB4gEKCBgQAhgGOAFAAQ==&amp;rs=AOn4CLB1p84C_4Zmm76Uz4XrR6-Q3AD4WA&amp;usqp=CCkp" alt="YouTube Shorts Car Lounge: выдача BMW" width="360" height="640" loading="lazy" decoding="async" />
+            <span class="short-play" aria-hidden="true"></span>
+            <span class="short-caption"><span>Shorts</span>Сегодня выдаем BMW</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div class="short-modal" aria-hidden="true">
+      <div class="short-modal__overlay" data-close-short></div>
+      <div class="short-modal__dialog" role="dialog" aria-modal="true" aria-label="Просмотр YouTube Shorts">
+        <button class="short-modal__close" type="button" data-close-short aria-label="Закрыть видео">×</button>
+        <iframe title="YouTube Shorts" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <section id="reviews" class="reviews section-pad" aria-labelledby="reviews-title">
+      <div class="container">
+        <div class="section-head reviews-head">
+          <div>
+            <p class="section-kicker">Отзывы и карта</p>
+            <h2 id="reviews-title">Нас рекомендуют <span>на Яндекс Картах</span></h2>
+          </div>
+          <a class="outline-button" href="https://yandex.com/maps/org/car_lounge/126476667101/" target="_blank" rel="noreferrer">Открыть в Яндекс Картах</a>
+        </div>
+
+        <div class="reviews-grid">
+          <article class="reviews-panel reviews-widget-card">
+            <div class="reviews-card-head">
+              <strong>Отзывы клиентов</strong>
+              <span>Живой виджет с отзывами о Car Lounge.</span>
+            </div>
+            <div class="reviews-widget">
+              <iframe src="https://yandex.ru/maps-reviews-widget/126476667101?comments" title="Отзывы Car Lounge на Яндекс Картах" loading="lazy"></iframe>
+              <a href="https://yandex.com/maps/org/car_lounge/126476667101/" target="_blank" rel="noreferrer">Car Lounge на карте Санкт-Петербурга — Яндекс Карты</a>
+            </div>
+          </article>
+
+          <div class="reviews-side">
+            <article class="reviews-info reviews-panel">
+              <strong>Car Lounge</strong>
+              <p>Санкт-Петербург. Постройте маршрут или посмотрите карточку компании на карте.</p>
+            </article>
+            <div class="reviews-map reviews-panel">
+              <iframe src="https://yandex.com/map-widget/v1/?ll=30.579715%2C59.828916&mode=search&oid=126476667101&ol=biz&z=10.37" title="Car Lounge на карте Санкт-Петербурга" loading="lazy" allowfullscreen="true"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="about" class="advantages section-pad" aria-labelledby="about-title">
+      <div class="container advantages-grid">
+        <div class="advantages-copy">
+          <p class="section-kicker">Преимущества</p>
+          <h2 id="about-title">Почему клиенты доверяют нам?</h2>
+          <p class="advantages-lead">Наш фундамент — глубокие экспертные знания и связи, наработанные за два десятилетия в премиум-сегменте.</p>
+          <p>Мы не просто посредники, а специалисты, которые помогают найти лучший вариант, обеспечить безопасность сделки и оперативно доставить автомобиль в РФ.</p>
+        </div>
+        <div class="advantages-cards">
+          <article>
+            <span class="advantage-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Z"/><path d="M3.6 9h16.8M3.6 15h16.8M12 3c2 2.5 3 5.5 3 9s-1 6.5-3 9M12 3c-2 2.5-3 5.5-3 9s1 6.5 3 9"/></svg></span>
+            <h3>Экспертиза в премиум-сегменте</h3>
+            <p>Два десятилетия работы с премиальными автомобилями помогают нам точно понимать рынок, продукт и реальные преимущества каждой комплектации.</p>
+          </article>
+          <article>
+            <span class="advantage-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 19c5-7 11-10 16-10"/><path d="M5 5h6v6H5z"/><path d="M13 13h6v6h-6z"/></svg></span>
+            <h3>Мировые автосалоны и аукционы</h3>
+            <p>Регулярно посещаем международные автосалоны и аукционы, поэтому видим тенденции рынка и находим сильные предложения раньше других.</p>
+          </article>
+          <article>
+            <span class="advantage-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 12h8"/><path d="M7 16 3 12l4-4"/><path d="m17 8 4 4-4 4"/><path d="M12 5v14"/></svg></span>
+            <h3>Прямые контракты с поставщиками</h3>
+            <p>Работаем с проверенными партнерами напрямую, контролируем происхождение автомобиля и прозрачность сделки на каждом этапе.</p>
+          </article>
+          <article>
+            <span class="advantage-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/><path d="M21 12a9 9 0 1 1-3-6.7"/></svg></span>
+            <h3>Безопасная логистика до РФ</h3>
+            <p>Знаем все этапы международной поставки: от проверки и покупки до документов, маршрута, таможни и передачи автомобиля клиенту.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contacts" class="site-footer" aria-labelledby="contacts-title">
+    <div class="container footer-grid">
+      <div>
+        <h2 id="contacts-title" class="footer-logo-title">
+          <img class="footer-logo" src="./public/images/logo.svg" alt="Car Lounge" width="158" height="64" loading="lazy" />
+        </h2>
+        <p>Подбор, проверка и поставка премиальных автомобилей из Южной Кореи, Китая, Европы и США. Работаем прозрачно, сопровождаем сделку и логистику до передачи автомобиля клиенту.</p>
+      </div>
+      <address>
+        <a href="tel:+78122407788">8 (812) 240-77-88</a>
+        <span>Санкт-Петербург</span>
+      </address>
+    </div>
+  </footer>
+
+  <script>
+    (() => {
+      const scrollCarousel = (name, direction) => {
+        const carousel = document.querySelector(`[data-carousel="${name}"]`);
+        if (!carousel) return;
+        const card = carousel.querySelector('[data-carousel-card]');
+        const styles = window.getComputedStyle(carousel);
+        const gap = parseFloat(styles.columnGap || styles.gap || '20') || 20;
+        const step = card ? card.getBoundingClientRect().width + gap : carousel.clientWidth * 0.85;
+        const nextLeft = direction === 'next' ? carousel.scrollLeft + step : carousel.scrollLeft - step;
+        carousel.scrollTo({ left: Math.max(0, nextLeft), behavior: 'smooth' });
+      };
+
+      document.querySelectorAll('[data-carousel-prev]').forEach((button) => {
+        button.addEventListener('click', () => scrollCarousel(button.getAttribute('data-carousel-prev'), 'prev'));
+      });
+      document.querySelectorAll('[data-carousel-next]').forEach((button) => {
+        button.addEventListener('click', () => scrollCarousel(button.getAttribute('data-carousel-next'), 'next'));
+      });
+
+      const modal = document.querySelector('.short-modal');
+      if (!modal) return;
+      const iframe = modal.querySelector('iframe');
+      const openButtons = document.querySelectorAll('.short-card');
+      const closeButtons = modal.querySelectorAll('[data-close-short]');
+
+      const closeModal = () => {
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('modal-open');
+        iframe.removeAttribute('src');
+      };
+
+      openButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+          const videoId = button.getAttribute('data-video-id');
+          const title = button.getAttribute('data-title') || 'YouTube Shorts';
+          if (!videoId) return;
+          iframe.setAttribute('title', title);
+          iframe.setAttribute('src', `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1&playsinline=1`);
+          modal.setAttribute('aria-hidden', 'false');
+          document.body.classList.add('modal-open');
+        });
+      });
+
+      closeButtons.forEach((button) => button.addEventListener('click', closeModal));
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') closeModal();
+      });
+    })();
+  </script>
+</body>
+</html>
